@@ -1,4 +1,4 @@
-![Logo Comision TIC](/home/vinagrero/Documents/Tic/ComisionTIC/Assets/logo_tic.png)
+<p align="center"><img src="https://github.com/DelegacionUC3M/ComisionTIC/raw/master/Assets/logo_tic.png" alt="Logo Comision TIC"></p>
 
 <h1 align="center">Comisión TIC</h1>
 

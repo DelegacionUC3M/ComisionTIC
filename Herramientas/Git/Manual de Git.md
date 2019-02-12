@@ -62,7 +62,10 @@ Untracked files:
     hola.txt
 ```
 
-Este mensaje nos indica que el archivo hola.txt esta “untracked”. Esto significa que Git aun no esta siguiendo los posibles cambios de dicho archivo.
+Este mensaje nos indica que el archivo hola.txt no esta siendo siendo seguido, también conocido como “untracked”. Esto significa que Git aun no esta siguiendo los posibles cambios de dicho archivo.
+
+> Podemos ignorar los archivos o directorios que queremos mediante el archivo **.gitignore**.
+>
 
 Para poder guardar en el histórico los cambios de los archivos necesitamos pasar a la siguiente etapa, el `staging` 
 
@@ -185,6 +188,71 @@ Already up-to-date.
 > Si no se han realizado cambios desde el ultimo commit, no se hace nada durante el pull
 
 ## Ramas
+
+A medida que nuestro proyecto crece, es conveniente separar las distintas funcionalidades del mismo en lo que se conocen como *ramas*.
+
+Cada rama mantiene su propio histórico, lo cual nos permite mantener cambios que no afecten a otras ramas hasta que las unamos.
+
+### Creación de ramas
+
+La rama por defecto en cualquier repositorio se conoce como **master**.
+
+Para crear una rama nueva solo tenemos que introducir `git branch <rama>`:
+
+```bash
+$ git branch nueva_rama
+```
+
+La rama que se ha creado es exactamente igual a *master*
+
+### Cambio de ramas
+
+Si introducimos `git branch` cuando tenemos mas de una rama obtenemos esto:
+
+```bash
+$ git branch
+  nueva_rama
+* master
+```
+
+La rama marcada con el asterisco es la rama en la que nos encontramos actualmente.
+
+Para cambiar a la otra rama, deberemos de introducir `git checkout`.
+
+```bash
+$ git checkout nueva_rama
+```
+
+> Podemos crear una rama y cambiar a esta automáticamente con el comando:
+>
+> `git checkout -b <rama>`
+
+### Uniendo ramas
+
+Our "amazing new feature" is going to be just another text file called *feature.txt*. We will create it, add it, and commit it.
+
+```
+$ git add feature.txt
+$ git commit -m "New feature complete."
+```
+
+The new feature is complete, we can go back to the master branch.
+
+```
+$ git checkout master
+```
+
+Now, if we open our project in the file browser, we'll notice that *feature.txt* has disappeared. That's because we are back in the master branch, and here *feature.txt* was never created. To bring it in, we need to `git merge` the two branches together, applying the changes done in *amazing_new_feature* to the main version of the project.
+
+```
+git merge amazing_new_feature
+```
+
+The master branch is now up to date. The awesome_new_feature branch is no longer needed and can be removed.
+
+```
+git branch -d amazing_new_feature
+```
 
 ## Referencias
 

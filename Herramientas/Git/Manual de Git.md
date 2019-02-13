@@ -229,29 +229,33 @@ $ git checkout nueva_rama
 
 ### Uniendo ramas
 
-Our "amazing new feature" is going to be just another text file called *feature.txt*. We will create it, add it, and commit it.
+Una vez queramos guardar nuestro progreso en nuestra nueva rama, bastara con hacer lo mismo que se he hemos hecho en master.
 
-```
-$ git add feature.txt
-$ git commit -m "New feature complete."
+```bash
+$ git add nuevo_archivo.txt
+$ git commit -m "Archivo nuevo finalizado"
 ```
 
-The new feature is complete, we can go back to the master branch.
+Para volver ahora a la rama master:
 
-```
+```bash
 $ git checkout master
 ```
 
-Now, if we open our project in the file browser, we'll notice that *feature.txt* has disappeared. That's because we are back in the master branch, and here *feature.txt* was never created. To bring it in, we need to `git merge` the two branches together, applying the changes done in *amazing_new_feature* to the main version of the project.
+Si observamos el proyecto, podremos ver que el archivo *nuevo_archivo.txt* ha desaparecido sin dejar rastro.
 
-```
-git merge amazing_new_feature
+Como se ha mencionado antes, cada rama mantiene su propio histórico de cambios, por lo que necesitamos traer los cambios de nuestra rama a master. Esto es lo que se conoce como **merging.**
+
+Para traer los cambios de una rama a otra, en nuestro caso de *nueva_rama* a *master*, deberemos de hacerlo mediante `git merge`.
+
+```bash
+$ git merge nueva_rama  # Estando en la rama master
 ```
 
-The master branch is now up to date. The awesome_new_feature branch is no longer needed and can be removed.
+Si no necesitamos más nuestra rama podemos eliminarla de la siguiente manera:
 
-```
-git branch -d amazing_new_feature
+```bash
+$ git branch -d nueva_rama
 ```
 
 ## Referencias

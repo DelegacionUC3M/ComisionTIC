@@ -25,9 +25,10 @@ Una pequeña lista con las herramientas que más utilizamos. Disponemos de guía
 
 ## Lenguajes
 
-- Go
+- [Go](Lenguajes/Go)
 - Javascript
 - Python
+- [SQL](Lenguajes/SQL)
 
 ## Contacto
 

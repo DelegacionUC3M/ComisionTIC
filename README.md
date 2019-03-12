@@ -31,7 +31,6 @@ Una pequeña lista con las herramientas que más utilizamos. Disponemos de guía
 
 ## Entornos de Desarrollo
 
-* [Índice](Entorno de desarrollo/)
 * Bot de Telegram
 
 ## Contacto

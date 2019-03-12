@@ -46,3 +46,17 @@ func main() {
 ```
 
 Como podemos observar, los programas en go se componen de **paquetes**. En este caso, este archivo pertenece al paquete *main*.
+
+## Tipos de datos
+
+## Tipos de datos derivados
+
+### Estructuras
+
+### Slices
+
+### Mapas
+
+## Secuencias de control
+
+## Bucles

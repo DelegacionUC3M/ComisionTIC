@@ -9,8 +9,9 @@ Comisión TIC de la delegación de estudiantes de la Universidad Carlos 3 de Mad
 Aquí se muestra una lista de aplicaciones que se encuentran en funcionamiento:
 
 - [Préstamos](https://github.com/DelegacionUC3M/prestamos): Gestión de los prestamos realizados por la delegación de estudiantes de la EPS.
-- [Taquillas](https://github.com/DelegacionUC3M/prestamos): Administración de taquillas para la universidad UC3M.
+- [Taquillas](https://github.com/DelegacionUC3M/taquillas): Administración de taquillas para la universidad UC3M.
 - [Tesorería](https://github.com/DelegacionUC3M/tesoreria): Gestión los presupuestos de las distintas delegaciones de la UC3M.
+- [Delebot](https://github.com/DelegacionUC3M/tesoreria): Bot de Telegram para facilitar la vida de la delegación de estudiantes de la EPS.
 
 ## Herramientas
 
@@ -27,6 +28,11 @@ Una pequeña lista con las herramientas que más utilizamos. Disponemos de guía
 - Javascript
 - Python
 - [SQL](Lenguajes/SQL)
+
+## Entornos de Desarrollo
+
+* [Índice](Entorno de desarrollo/)
+* Bot de Telegram
 
 ## Contacto
 

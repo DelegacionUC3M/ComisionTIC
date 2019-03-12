@@ -19,7 +19,18 @@ Go
 └── src  // Archivos fuente
 ```
 
-> Por defecto `$GOPATH` tendrá el valor de `$HOME/go`
+Por defecto `$GOPATH` tendrá el valor de `$HOME/go`
+
+Según el estándar la ruta completa debería de ser esta:
+
+```bash
+$HOME/go/src/github.com/{cuenta_github}/{proyecto}/
+C:\Users\{user}\go\src\github.com\{cuenta_github}\{proyecto}\
+```
+
+Donde **{user}** es vuestro usuario, **{cuenta_github}** es vuestro usuario de github y **{proyecto}** es el nombre del proyecto en el que estáis trabajando.
+
+> Esta carpeta no se creará a no ser que instalemos alguna librería o compilemos algún proyecto. Se pueden crear a mano.
 
 #### Comandos básicos
 

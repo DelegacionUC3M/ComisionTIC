@@ -13,6 +13,8 @@ $ sudo dnf install git-all
 $ sudo yum install git
 ```
 
+En caso de no estar disponible siempre lo podéis instalar desde la [página web oficial](https://git-scm.com/).
+
 ### Configurando Git
 
 Lo primero que necesitamos hacer es configurar nuestro usuario y contraseña para poder comenzar a trabajar con Git:
